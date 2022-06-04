@@ -79,7 +79,7 @@
           "hard"
         ]
       },
-      "title": "Reset when revisited?",
+      "title": "restablecer cuando se vuelve a visitar?",
       "help": "Controls whether this component will be reset when the learner leaves the page then returns to it. The 'soft' setting will reset the component to allow the learner to attempt it again, but will not require them to do so; whereas the 'hard' setting will require them to do so. The default (false) will not cause the component to be reset.",
       "validators": []
     },
@@ -97,7 +97,7 @@
       "isSetting": true,
       "inputType": "Checkbox",
       "validators": [],
-      "title": "Is the accessibility state disabled?",
+      "title": "¿El estado de accesibilidad está deshabilitado?",
       "help": "Controls whether the user can tab to a hidden label that describes the completion state of the component"
     },
     "_parentId": {
@@ -112,7 +112,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "default": "New Component Title",
+      "default": "Título del nuevo componente",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -120,7 +120,7 @@
     "displayTitle": {
       "type": "string",
       "required": false,
-      "default": "New Component Title",
+      "default": "Título del nuevo componente",
       "inputType": "DisplayTitle",
       "validators": [],
       "help": "When viewing a component - this is the title that will be displayed",
@@ -135,7 +135,7 @@
     },
     "_onScreen": {
       "type": "object",
-      "title": "On-screen classes",
+      "title": "en la pantalla classes",
       "help": "These settings allow you to attach classes to the component when it is within the browser's viewport; helpful for running CSS-based animations on components as they scroll into view.",
       "properties": {
         "_isEnabled": {
@@ -161,7 +161,7 @@
           "required": false,
           "default": 50,
           "isSetting": true,
-          "title": "Percent in view",
+          "title": "Porcentaje a la vista",
           "inputType": "Number",
           "validators": ["number"],
           "help": "Controls what percentage of the component's height needs to be in the viewport in order for the CSS class(es) to be added."

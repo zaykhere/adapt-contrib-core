@@ -15,7 +15,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "default": "New Block Title",
+      "default": "nuevo título de bloque",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
