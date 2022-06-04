@@ -7,7 +7,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "default": "New Article Title",
+      "default": "New Article Titleo",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
