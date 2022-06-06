@@ -15,6 +15,7 @@
     },
     "title": {
       "type": "string",
+      "title": "Título",
       "required": true,
       "default": "Nuevo título del curso",
       "inputType": "Text",
@@ -26,6 +27,7 @@
     "displayTitle": {
       "type": "string",
       "required": false,
+      "title": "Mostrar título",
       "default": "Nuevo título del curso",
       "inputType": "DisplayTitle",
       "validators": [],
@@ -35,6 +37,7 @@
     "subtitle": {
       "type": "string",
       "required": false,
+      "title": "Subtitular",
       "default": "Subtitular",
       "inputType": "Text",
       "validators": [],
@@ -44,6 +47,7 @@
     "description": {
       "type": "string",
       "required": false,
+      "title": "Descripción",
       "default": "Descripción",
       "inputType": "Text",
       "validators": [],
@@ -53,6 +57,7 @@
     "body": {
       "type": "string",
       "default": "Cuerpo",
+      "title": "Cuerpo",
       "inputType": "TextArea",
       "validators": [],
       "translatable": true
@@ -149,6 +154,7 @@
     },
     "_globals": {
       "type": "object",
+      "title": "Globales",
       "properties": {
         "_accessibility": {
           "type": "object",
@@ -358,7 +364,7 @@
     "_buttons": {
       "type": "object",
       "default": "",
-      "title": "",
+      "title": "Botones",
       "isSetting": false,
       "properties": {
         "_submit": {
