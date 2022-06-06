@@ -7,7 +7,7 @@
     "heroImage": {
       "type": "string",
       "title": "Imagen de vista previa",
-      "default": "Imagen de vista previa",
+      "default": "",
       "inputType": "Asset:image",
       "validators": [],
       "editorOnly": true,
