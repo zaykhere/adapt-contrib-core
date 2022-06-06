@@ -30,16 +30,16 @@
           "default": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Require content completion",
-          "help": "Specifies that all content on the course must be completed"
+          "title": "Requerir finalización de contenido",
+          "help": "Especifica que se debe completar todo el contenido del curso."
         },
         "_requireAssessmentCompleted": {
           "type": "boolean",
           "default": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Require assessment completion",
-          "help": "Specifies that all assessments on the course must be completed"
+          "title": "Requerir finalización de la evaluación",
+          "help": "Especifica que se deben completar todas las evaluaciones del curso."
         }
       }
     },
@@ -47,7 +47,7 @@
       "type": "string",
       "required": true,
       "default": "en",
-      "title": "Default Language",
+      "title": "Idioma predeterminado",
       "inputType": "Text",
       "validators": ["required"]
     },
@@ -55,7 +55,7 @@
       "type": "string",
       "required": true,
       "default": "ltr",
-      "title": "Text Direction",
+      "title": "Dirección del texto",
       "validators": ["required"],
       "inputType": {
         "type": "Select",
@@ -67,14 +67,14 @@
     },
     "_accessibility": {
       "type": "object",
-      "title": "Accessibility",
+      "title": "Accesibilidad",
       "properties" : {
         "_isEnabled": {
           "type": "boolean",
           "default": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enabled?"
+          "title": "¿Activada?"
         },
         "_isSkipNavigationEnabled": {
           "type": "boolean",
@@ -82,18 +82,18 @@
           "inputType": "Checkbox",
           "validators": [],
           "title": "¿Habilitar el vínculo Omitir navegación?",
-          "help": "Adds a link to the start of the page to allow assistive technology users to skip over the navigation and straight into to the page content."
+          "help": "Agrega un enlace al inicio de la página para permitir que los usuarios de tecnología de asistencia salten la navegación y vayan directamente al contenido de la página."
         },
         "_ariaLevels": {
           "type": "object",
-          "title": "ARIA Levels",
-          "help": "Defines what value to assign to the aria-level attribute for the various elements of Adapt",
+          "title": "Niveles ARIA",
+          "help": "Define qué valor asignar al atributo de nivel aria para los diversos elementos de Adapt",
           "properties" : {
             "_menu": {
               "type": "number",
               "required": true,
               "default": 1,
-              "title": "Menu element ARIA level",
+              "title": "Elemento de menú Nivel ARIA",
               "inputType": "Number",
               "validators": ["required", "number"]
             },
@@ -112,7 +112,7 @@
               "title": "ARIA level de elemento del menú",
               "inputType": "Number",
               "validators": ["required", "number"],
-              "help": "The Menu Item element ARIA level will need to be changed to 3 if Menu Groups are being used and A11Y support is required."
+              "help": "El nivel ARIA del elemento del elemento del menú deberá cambiarse a 3 si se utilizan grupos de menú y se requiere compatibilidad con A11Y."
             },
             "_page": {
               "type": "number",
@@ -150,7 +150,7 @@
               "type": "number",
               "required": true,
               "default": 5,
-              "title": "Component Item element ARIA level",
+              "title": "Componente Elemento elemento Nivel ARIA",
               "inputType": "Number",
               "validators": ["required", "number"]
             },
@@ -173,7 +173,7 @@
             "mode": "json"
           },
           "validators": [],
-          "help": "Optional object that can be used to customize the accessibility behaviour"
+          "help": "Objeto opcional que se puede utilizar para personalizar el comportamiento de accesibilidad"
         }
       }
     },
@@ -182,13 +182,13 @@
       "default": {
         "_imgLazyLoad": true
       },
-      "title": "Fixes Extended Options",
+      "title": "Corrige opciones extendidas",
       "inputType": {
         "type": "CodeEditor",
         "mode": "json"
       },
       "validators": [],
-      "help": "Optional object that can be used to customize the application of fixes"
+      "help": "Objeto opcional que se puede utilizar para personalizar la aplicación de correcciones"
     },
     "screenSize": {
       "type": "object",
@@ -198,25 +198,25 @@
           "type": "number",
           "required": true,
           "default": 520,
-          "title": "Small",
+          "title": "Pequeña",
           "inputType": "Number",
           "validators": ["required", "number"],
-          "help": "Pixel width for the small breakpoint, e.g. cellphones"
+          "help": "Ancho de píxel para el punto de interrupción pequeño, ejemplo de teléfonos móviles"
         },
         "medium": {
           "type": "number",
           "required": true,
           "default": 760,
-          "title": "Medium",
+          "title": "Medio",
           "inputType": "Number",
           "validators": ["required", "number"],
-          "help": "Pixel width for the medium breakpoint, e.g. tablet devices"
+          "help": "Ancho de píxel para el punto de interrupción medio, dispositivos de tableta de ejemplo"
         },
         "large": {
           "type": "number",
           "required": true,
           "default": 900,
-          "title": "Large",
+          "title": "Larga",
           "inputType": "Number",
           "validators": ["required", "number"],
           "help": "Pixel width for the large breakpoint, e.g. laptop/desktop computers"
@@ -235,13 +235,13 @@
     "_drawer": {
       "type": "object",
       "isSetting": false,
-      "title": "",
+      "title": "Mostrar facilidad en",
       "properties": {
         "_showEasing": {
           "type": "string",
           "required": true,
           "default": "easeOutQuart",
-          "title": "Show Ease In",
+          "title": "Mostrar facilidad en",
           "inputType": {
             "type": "Select",
             "options": [
@@ -283,7 +283,7 @@
           "type": "string",
           "required": true,
           "default": "easeInQuart",
-          "title": "Hide Easing",
+          "title": "Ocultar aceleración",
           "inputType": {
             "type": "Select",
             "options": [
@@ -325,7 +325,7 @@
           "type": "number",
           "required": true,
           "default": 400,
-          "title": "Duration",
+          "title": "Duración",
           "inputType": "Number",
           "validators": ["required", "number"]
         }
@@ -337,8 +337,8 @@
       "isSetting": true,
       "inputType": "Checkbox",
       "validators": [],
-      "title": "Generate sourcemaps?",
-      "help": "Allows the course JavaScript & CSS to be debugged via the browser's developer tools."
+      "title": "¿Generar mapas fuente?",
+      "help": "Permite depurar JavaScript y CSS del curso a través de las herramientas de desarrollo del navegador."
     },
     "_forceRouteLocking": {
       "type": "boolean",
@@ -346,8 +346,8 @@
       "isSetting": true,
       "inputType": "Checkbox",
       "validators": [],
-      "title": "Enforce route locking?",
-      "help": "If locking is enabled, this setting prevents navigating to locked routes"
+      "title": "¿Hacer cumplir el bloqueo de ruta?",
+      "help": "Si el bloqueo está habilitado, esta configuración impide navegar a rutas bloqueadas"
     },
     "_disableAnimationFor": {
       "type": "array",
@@ -355,11 +355,11 @@
       "title": "Desactivar animación para",
       "isSetting": true,
       "inputType": "List",
-      "help": "Allows you to disable some animations (e.g. the drawer close animation) on platform(s) where they are not performing well, using CSS selectors to target the relevant platform(s) via the classes on the HTML element."
+      "help": "Le permite deshabilitar algunas animaciones (p. ej., la animación de cierre del cajón) en plataformas en las que no funcionan bien, utilizando selectores de CSS para apuntar a las plataformas relevantes a través de las clases en el elemento HTML."
     },
     "_logging": {
       "type": "object",
-      "title": "Logging",
+      "title": "Inicio sesión",
       "properties": {
         "_isEnabled": {
           "type": "boolean",
@@ -367,13 +367,13 @@
           "required": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enabled?"
+          "title": "¿Activada?"
         },
         "_level": {
           "type": "string",
           "required": true,
           "default" : "info",
-          "title" : "Log Level",
+          "title" : "Nivel de registro",
           "validators": [],
           "inputType": {
             "type": "Select",
@@ -418,10 +418,10 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Limit to selector",
+          "title": "Límite a la selector",
           "inputType": "Text",
           "validators": [],
-          "help": "CSS selector to match against the HTML element when determining whether this should be active or not."
+          "help": "Selector de CSS para que coincida con el elemento HTML al determinar si debe estar activo o no."
         }
       }
     },
