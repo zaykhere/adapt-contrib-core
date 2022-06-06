@@ -245,7 +245,7 @@
                 "closeResources": {
                   "type": "string",
                   "title": "",
-                  "default": "Cerrar recursos,
+                  "default": "Cerrar recursos",
                   "inputType": "Text",
                   "required": true,
                   "translatable": true
