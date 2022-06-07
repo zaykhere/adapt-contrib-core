@@ -113,6 +113,7 @@
       "type": "string",
       "required": true,
       "default": "Título del nuevo componente",
+      "title": "Título",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -121,6 +122,7 @@
       "type": "string",
       "required": false,
       "default": "Título del nuevo componente",
+      "title": "Mostrar título",
       "inputType": "DisplayTitle",
       "validators": [],
       "help": "Al ver un componente, este es el título que se mostrará",
@@ -129,6 +131,7 @@
     "body":{
       "type": "string",
       "default" : "",
+      "title": "Cuerpo",
       "inputType": "TextArea",
       "validators": [],
       "translatable": true
