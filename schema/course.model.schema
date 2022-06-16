@@ -52,7 +52,7 @@
       "inputType": "Text",
       "validators": [],
       "translatable": true,
-      "help": "This will be added to the course's manifest file metadata. It is not (currently) displayed anywhere within the course."
+      "help": "Esto se agregará a los metadatos del archivo de manifiesto del curso. No se muestra (actualmente) en ninguna parte del curso."
     },
     "body": {
       "type": "string",
@@ -66,7 +66,7 @@
       "type": "string",
       "required": false,
       "title": "Texto de instrucción",
-      "default": "Texto de instrucción",
+      "default": "",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -75,7 +75,7 @@
       "type": "string",
       "required": false,
       "title": "Clases HTML",
-      "default": "Clases HTML",
+      "default": "",
       "inputType": "Text",
       "validators": [],
       "help": "Si se establece, esta clase se aplicará al elemento <html> cuando se muestre el menú de nivel superior del curso. Estos están predefinidos en el tema o se agregan en el código CSS/Less personalizado."
@@ -126,7 +126,7 @@
                 "type": "string",
                 "inputType": "Text",
                 "required": true,
-                "title": "Classes",
+                "title": "Clases",
                 "help": "Lista opcional separada por comas de nombres de clases que se usarán para seleccionar esta página de inicio"
               }
             }
@@ -372,6 +372,7 @@
           "title": "Enviar",
           "properties": {
             "buttonText": {
+              "title": "Botón de texto",
               "type": "string",
               "default": "Enviar",
               "inputType": "Text",
@@ -399,6 +400,7 @@
           "title": "Reiniciar",
           "properties": {
             "buttonText": {
+              "title": "Botón de texto",
               "type": "string",
               "default": "Reiniciar",
               "inputType": "Text",
@@ -410,7 +412,7 @@
             },
             "ariaLabel": {
               "type": "string",
-              "title": "ARIA label",
+              "title": "etiqueta ARIA",
               "default": "Reiniciar",
               "inputType": "Text",
               "required": true,
@@ -437,7 +439,7 @@
             },
             "ariaLabel": {
               "type": "string",
-              "title": "ARIA label",
+              "title": "etiqueta ARIA",
               "default": "Mostrar respuesta correcta",
               "inputType": "Text",
               "required": true,
@@ -457,6 +459,7 @@
               "default": "Muestra tu respuesta",
               "inputType": "Text",
               "required": true,
+              "title": "Botón de texto",
               "validators": [
                 "required"
               ],
@@ -464,7 +467,7 @@
             },
             "ariaLabel": {
               "type": "string",
-              "title": "ARIA label",
+              "title": "etiqueta ARIA",
               "default": "Muestra tu respuesta",
               "inputType": "Text",
               "required": true,
@@ -481,6 +484,7 @@
           "properties": {
             "buttonText": {
               "type": "string",
+              "title": "Botón de texto",
               "default": "Mostrar comentarios",
               "inputType": "Text",
               "required": true,
@@ -491,7 +495,7 @@
             },
             "ariaLabel": {
               "type": "string",
-              "title": "ARIA label",
+              "title": "etiqueta ARIA",
               "default": "Mostrar comentarios",
               "inputType": "Text",
               "required": true,
@@ -572,11 +576,13 @@
     "_isSelected": {
       "type": "boolean",
       "default": false,
+      "title": "Está seleccionado",
       "editorOnly": true
     },
     "_hasPreview": {
       "type": "boolean",
       "default": false,
+      "title": "¿Tiene vista previa?",
       "editorOnly": true
     },
     "_isShared": {
