@@ -8,6 +8,7 @@
       "type": "string",
       "required": true,
       "default": "título del nuevo artículo",
+      "title": "Título",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -16,6 +17,7 @@
       "type": "string",
       "required": false,
       "default": "",
+      "title": "Mostrar título",
       "inputType": "DisplayTitle",
       "validators": [],
       "help": "Al ver un artículo, este es el título que se mostrará en la página.",
@@ -25,6 +27,7 @@
       "type": "string",
       "default": "",
       "inputType": "TextArea",
+      "title": "Cuerpo",
       "validators": [],
       "translatable": true
     },
@@ -95,6 +98,7 @@
       "type": "number",
       "default": 0,
       "isSetting": true,
+      "title": "etiqueta ARIA",
       "inputType": "Number",
       "validators": ["number"],
       "help": "Si necesita anular el nivel ARIA predeterminado del artículo (tal como se define en los Ajustes de configuración), configúrelo en cualquier número mayor que 0."

@@ -17,7 +17,8 @@
     "_component": {
       "type": "string",
       "required": true,
-      "default": ""
+      "default": "",
+      "title": "Componente"
     },
     "_layout": {
       "type": "string"
@@ -86,6 +87,7 @@
     "_ariaLevel": {
       "type": "number",
       "default": 0,
+      "title": "Nivel ARIA",
       "isSetting": true,
       "inputType": "Number",
       "validators": ["number"],

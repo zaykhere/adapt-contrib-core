@@ -8,6 +8,7 @@
       "type": "string",
       "required": true,
       "default": "Nuevo título de página/menú",
+      "title": "Título",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -16,6 +17,7 @@
       "type": "string",
       "required": false,
       "default": "Nuevo título de página/menú",
+      "title": "Mostrar título",
       "inputType": "DisplayTitle",
       "validators": [],
       "help": "Al ver un menú/página: este es el título que se mostrará en el menú/página",
@@ -24,6 +26,7 @@
     "subtitle": {
       "type": "string",
       "required": false,
+      "title": "Subtitular",
       "default": "",
       "inputType": "Text",
       "validators": [],
@@ -35,12 +38,14 @@
       "default" : "",
       "inputType": "TextArea",
       "validators": [],
+      "title": "Cuerpo de la página",
       "translatable": true,
       "help": "Si se establece, este texto se mostrará en lugar del texto del cuerpo cuando se vea esta página."
     },
     "body":{
       "type": "string",
       "default" : "",
+      "title": "Cuerpo",
       "inputType": "TextArea",
       "validators": [],
       "translatable": true
@@ -57,7 +62,7 @@
     "_htmlClasses": {
       "type": "string",
       "required": false,
-      "title": "HTML Classes",
+      "title": "Clases HTML",
       "default": "",
       "inputType": "Text",
       "validators": [],
@@ -65,7 +70,7 @@
     },
     "_graphic": {
       "type": "object",
-      "title": "",
+      "title": "Gráfico",
       "properties": {
         "alt": {
           "type": "string",
@@ -81,6 +86,7 @@
           "type": "string",
           "required": false,
           "default": "",
+          "title": "Cargar imagen",
           "inputType": "Asset:image",
           "validators": [],
           "help": "Este es el enlace a la imagen"
@@ -191,6 +197,7 @@
       "default": 0,
       "isSetting": true,
       "inputType": "Number",
+      "title": "Nivel ARIA",
       "validators": ["number"],
       "help": "Si necesita anular el nivel de ARIA de la página predeterminada (como se define en los Ajustes de configuración), configúrelo en cualquier número mayor que 0."
     },
@@ -214,7 +221,7 @@
           "required": false,
           "inputType": "Text",
           "validators": [],
-          "title": "Classes",
+          "title": "Clases",
           "help": "La(s) clase(s) CSS para agregar al elemento de la página."
         },
         "_percentInviewVertical": {

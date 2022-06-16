@@ -126,7 +126,7 @@
               "type": "number",
               "required": true,
               "default": 2,
-              "title": "ARIA level de elemento del artículo",
+              "title": "ARIA nivel de elemento del artículo",
               "inputType": "Number",
               "validators": ["required", "number"]
             },
@@ -134,7 +134,7 @@
               "type": "number",
               "required": true,
               "default": 3,
-              "title": "ARIA level de elemento de bloque",
+              "title": "ARIA nivel de elemento de bloque",
               "inputType": "Number",
               "validators": ["required", "number"]
             },
@@ -142,7 +142,7 @@
               "type": "number",
               "required": true,
               "default": 4,
-              "title": "ARIA level de elemento componente",
+              "title": "ARIA nivel de elemento componente",
               "inputType": "Number",
               "validators": ["required", "number"]
             },
@@ -158,7 +158,7 @@
               "type": "number",
               "required": true,
               "default": 1,
-              "title": "ARIA level de título emergente",
+              "title": "ARIA nivel de título emergente",
               "inputType": "Number",
               "validators": ["required", "number"]
             }

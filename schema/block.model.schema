@@ -10,12 +10,14 @@
     },
     "layoutOptions": {
       "type": "array",
-      "editorOnly": true
+      "editorOnly": true,
+      "title": "Opciones de diseño"
     },
     "title": {
       "type": "string",
       "required": true,
       "default": "nuevo título de bloque",
+      "title": "Título",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -24,6 +26,7 @@
       "type": "string",
       "required": false,
       "default": "",
+      "title": "Mostrar título",
       "inputType": "DisplayTitle",
       "validators": [],
       "help": "Al ver un bloque: este es el título que se mostrará en la página",
@@ -32,6 +35,7 @@
     "body":{
       "type": "string",
       "default" : "",
+      "title" : "Cuerpo",
       "inputType": "TextArea",
       "validators": [],
       "translatable": true
@@ -102,6 +106,7 @@
     "_ariaLevel": {
       "type": "number",
       "default": 0,
+      "title" : "etiqueta aria",
       "isSetting": true,
       "inputType": "Number",
       "validators": ["number"],
